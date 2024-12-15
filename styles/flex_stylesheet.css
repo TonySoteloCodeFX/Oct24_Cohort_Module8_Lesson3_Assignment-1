@@ -1,0 +1,134 @@
+/* FONTS  */
+/* font-family: "Protest Revolution", sans-serif;
+font-family: "Roboto", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(ellipse, #2A19A2, #9948E5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_nav_container, .bottom_nav {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #9948E5;
+    list-style-type: none;
+}
+
+.top_nav_container a, .bottom_nav li {
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.top_nav_container a:hover, .bottom_nav li:hover {
+    scale: 1.1;
+    color: #4ff9ff;
+}
+
+.header_container {
+    background-image: url(https://substackcdn.com/image/fetch/w_520,h_272,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa8f90287-a998-4fcf-8c96-ba932db8f039_1024x1024.png);
+    background-size: cover;
+    background-position: 0px 250px;
+    height: 200px;
+}
+
+h1 {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    color: #9948E5;
+    text-align: center;
+    width: 300px;
+    padding-top: 2%;
+    margin-left: 2%;
+}
+
+.container_vegeta_childhood, .container_vegeta_young_adult, .container_majin_vegeta, .container_vegeta_destroyer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vegeta_childhood, .vegeta_young_adult, .majin_vegeta, .vegeta_destroyer {
+    font-family: "Roboto", serif;
+    line-height: 50px;
+    color: white;
+    width: 45%;
+    text-align: justify;
+    font-size: 30px;
+}
+
+@media (max-width: 1100px) {
+
+    .top_nav_container, .bottom_nav {
+        flex-direction: column;
+        height: auto;
+        position: absolute;
+    }
+
+    .bottom_nav {
+        right: 0px;
+        width: 150px;
+        
+    }
+
+    .top_nav_container a, .bottom_nav li {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .header_container {
+        height: 150px;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        width: auto;
+        padding-top: 5%;
+        margin-left: 0;
+        color: white;
+    }
+
+    .container_vegeta_childhood, .container_vegeta_young_adult, .container_majin_vegeta, .container_vegeta_destroyer {
+        flex-direction:column;
+    }
+
+    .vegeta_childhood, .vegeta_young_adult, .majin_vegeta, .vegeta_destroyer {
+        width: 90%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .img_vegeta_childhood img, .img_vegeta_young_adult img, .img_majin_vegeta img, .img_vegeta_destroyer img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 500px;
+        height: auto;
+    }
+
+    .header_container {
+        background-size: cover;
+        background-position: 0px 200px;
+        height: 200px;
+    }
+}

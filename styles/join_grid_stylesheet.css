@@ -1,0 +1,105 @@
+/* FONTS  */
+/* font-family: "Protest Revolution", sans-serif;
+font-family: "Roboto", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header, footer {
+    font-family: "Roboto", serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 20px;
+    background-color: #9948E5;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    scale: 1.1;
+    color: #4ff9ff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.vegeta_pic {
+    background-image: url(/img/tony.vfx_Vegeta_through_his_transformations_as_a_child_prince_o_29b52815-95c6-4249-8ade-ac5ae3b152be.png);
+}
+
+form {
+    font-family: "Roboto", serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse, #2A19A2, #9948E5);
+}
+
+h1 {
+    font-family: "Protest Revolution", sans-serif;
+    font-size: 30px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #9948E5;
+    box-shadow: 1px 2px 7px;
+    color: #9948E5;
+    transition-duration: 0.5s;
+}
+
+.details:hover {
+    scale: 1.05;
+    box-shadow: 1px 10px 20px;
+}
+
+input {
+    width: 100px;
+    text-align: center;
+}
+
+label, h1, p {
+    color: white;
+}
+
+button {
+    font-family: "Roboto", serif;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #9948E5;
+    padding: 5px;
+    box-shadow: inset 1px 2px 5px;
+}
